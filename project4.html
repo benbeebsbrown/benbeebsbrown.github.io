@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Other RPG projects | Ben Brown | Art and Illustration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a href="index.html">← Back</a>
+
+<h1>Miscellaneous RPG projects</h1>
+
+<p>Pieces from a variety of smaller RPG-related projects.
+</p>
+
+<div class="gallery">
+
+  <div class="responsive">
+    <div class="img">
+      <img src="images/Misc/img (13).jpg">
+      <div class="desc"><em>Left Hand of Yaldaboeth</em> - cover</div>
+    </div>
+  </div>
+
+    <div class="responsive">
+    <div class="img">
+      <img src="images/Misc/img (14).jpg">
+      <div class="desc"><em>Visions of Kal-Arath</em> - cover</div>
+    </div>
+  </div>
+
+      <div class="responsive">
+    <div class="img">
+      <img src="images/Misc/img (1).jpeg">
+      <div class="desc"><em>Untitled Bestiary project</em> - Damned explorers</div>
+    </div>
+  </div>
+
+        <div class="responsive">
+    <div class="img">
+      <img src="images/Misc/img (2).jpeg">
+      <div class="desc"><em>Untitled Bestiary project</em> - Fat troll</div>
+    </div>
+  </div>
+
+        <div class="responsive">
+    <div class="img">
+      <img src="images/Misc/img (3).jpeg">
+      <div class="desc"><em>Untitled Bestiary project</em> - Mammoth City</div>
+    </div>
+  </div>
+
+        <div class="responsive">
+    <div class="img">
+      <img src="images/Misc/img (4).jpeg">
+      <div class="desc"><em>Untitled Bestiary project</em> - Aquatic Troll</div>
+    </div>
+  </div>
+
+        <div class="responsive">
+    <div class="img">
+      <img src="images/Misc/img (5).jpeg">
+      <div class="desc"><em>Untitled Bestiary project</em> - Scorpion Gladiator</div>
+    </div>
+  </div>
+
+        <div class="responsive">
+    <div class="img">
+      <img src="images/Misc/img (6).jpeg">
+      <div class="desc"><em>Untitled Bestiary project</em> - Scorpion God</div>
+    </div>
+  </div>
+
+        <div class="responsive">
+    <div class="img">
+      <img src="images/Misc/img (7).jpeg">
+      <div class="desc"><em>Untitled Bestiary project</em> - Thin Troll</div>
+    </div>
+  </div>
+
+        <div class="responsive">
+    <div class="img">
+      <img src="images/Misc/img (8).jpeg">
+      <div class="desc"><em>Untitled Bestiary project</em> - Tomb Guardian</div>
+    </div>
+  </div>
+
+        <div class="responsive">
+    <div class="img">
+      <img src="images/Misc/img (9).jpeg">
+      <div class="desc"><em>Untitled Bestiary project</em> - Tupilaq</div>
+    </div>
+  </div>
+
+        <div class="responsive">
+    <div class="img">
+      <img src="images/Misc/img (10).jpeg">
+      <div class="desc"><em>Untitled Bestiary project</em> - Blind Hunter</div>
+    </div>
+  </div>
+
+        <div class="responsive">
+    <div class="img">
+      <img src="images/Misc/img (11).jpeg">
+      <div class="desc"><em>Untitled Bestiary project</em> - Golden Conquistador</div>
+    </div>
+  </div>
+
+        <div class="responsive">
+    <div class="img">
+      <img src="images/Misc/img (12).jpeg">
+      <div class="desc"><em>Untitled Bestiary project</em> - Mountain Hunter</div>
+    </div>
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close">x</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+  var modal = document.getElementById('myModal');
+
+  var span = document.getElementsByClassName('close')[0];
+
+  span.onclick = function() {
+    modal.style.display = "none"
+  };
+
+  var images = document.getElementsByTagName('img');
+  var modalImg = document.getElementById('img01');
+  var captionText = document.getElementById('caption');
+  var i;
+  for (i = 0; i < images.length; i++) {
+    images[i].onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+      captionText.innerHTML = this.nextElementSibling.innerHTML;
+    }
+  }
+</script>
+
+</body>
+</html>

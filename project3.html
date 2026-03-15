@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>False Monarchy and other Demon stuff | Ben Brown | Art and Illustration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a href="index.html">← Back</a>
+
+<h1>False Monarchy and other Demon Stuff</h1>
+
+<p>Illustrations for <em>False Monarchy</em>, a zine of my own concerning various demons and how to identify their worship.
+</p>
+<p>More daemonological illustration is in the works.</p>
+
+<div class="gallery">
+
+  <div class="responsive">
+    <div class="img" alt="Cover">
+      <img src="images/Demons/demon (1).jpg">
+      <div class="desc">Lord Argor</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="img">
+       <img src="images/Demons/demon (2).jpg">
+      <div class="desc">Lady Mafys</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="img">
+       <img src="images/Demons/demon (3).jpg">
+      <div class="desc">Lord Gragor</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="img">
+       <img src="images/Demons/demon (4).jpg">
+       </div>
+      <div class="desc">Lady Arannia</div>
+    </div>
+
+  <div class="responsive"><div class="img">
+     <img src="images/Demons/demon (5).jpg">
+    </div>
+      <div class="desc">Marshal Gorvon</div>
+  </div>
+
+   <div class="responsive"><div class="img">
+     <img src="images/Demons/demon.jpg">
+    </div>
+      <div class="desc">Lord Sidaeon</div>
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close">x</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+  var modal = document.getElementById('myModal');
+
+  var span = document.getElementsByClassName('close')[0];
+
+  span.onclick = function() {
+    modal.style.display = "none"
+  };
+
+  var images = document.getElementsByTagName('img');
+  var modalImg = document.getElementById('img01');
+  var captionText = document.getElementById('caption');
+  var i;
+  for (i = 0; i < images.length; i++) {
+    images[i].onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+      captionText.innerHTML = this.nextElementSibling.innerHTML;
+    }
+  }
+</script>
+
+</body>
+</html>

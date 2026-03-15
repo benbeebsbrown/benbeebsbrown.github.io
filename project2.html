@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Best Left Buried and Soulmuppet projects | Ben Brown | Art and Illustration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a href="index.html">← Back</a>
+
+<h1>Best Left Buried | Soulmuppet Projects</h1>
+
+<p>Illustrations for <em>Best Left Buried</em>, the OSR fantasy-horror game from Soulmuppet publishing.
+</p>
+<p>Plus illustrations for other Soulmuppet projects, including the grimdark urban world of <em>Gangs of Titan City</em>.</p>
+
+<div class="gallery">
+
+  <div class="responsive">
+    <div class="img" alt="Cover">
+      <img src="images/Soulmuppet/img (37).jpg">
+      <div class="desc"><em>Best Left Buried - Cryptdigger's Guide to Survival</em> - cover
+      </div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="img" alt="Lion hydra">
+      <img src="images/Soulmuppet/img (7).jpg">
+      <div class="desc">Lion hydra
+      </div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="img">
+      <img src="images/Soulmuppet/img (10).jpg">
+      <div class="desc"><em>Best Left Buried - Monster Manual</em> - cover</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="img">
+      <img src="images/Soulmuppet/img (38).jpg">
+      <div class="desc"><em>Best Left Buried - Cult worshippers</em></div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="img">
+      <img src="images/Soulmuppet/img (31).jpg">
+      <div class="desc"><em>Best Left Buried</em> - Baal</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="img">
+      <img src="images/Soulmuppet/img (26).jpg">
+      <div class="desc"><em>Best Left Buried</em> - Great Crow</div>
+  </div>
+</div>
+
+<div class="responsive">
+      <div class="img">
+      <img src="images/Soulmuppet/img (2).jpeg">
+      <div class="desc"><em>Best Left Buried</em> - Consequences illustration</div>
+  </div>
+</div>
+
+<div class="responsive">
+      <div class="img">
+      <img src="images/Soulmuppet/img (3).jpeg">
+      <div class="desc"><em>Best Left Buried</em> - Consequences illustration</div>
+  </div>
+</div>
+
+<div class="responsive">
+      <div class="img">
+      <img src="images/Soulmuppet/img (4).jpeg">
+      <div class="desc"><em>Best Left Buried</em> - Consequences illustration</div>
+  </div>
+</div>
+
+<div class="responsive">
+      <div class="img">
+      <img src="images/Soulmuppet/img (5).jpeg">
+      <div class="desc"><em>Best Left Buried</em> - Consequences illustration</div>
+  </div>
+</div>
+
+<div class="responsive">
+      <div class="img">
+      <img src="images/Soulmuppet/img (6).jpeg">
+      <div class="desc"><em>Best Left Buried</em> - Consequences illustration</div>
+  </div>
+</div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close">x</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+  var modal = document.getElementById('myModal');
+
+  var span = document.getElementsByClassName('close')[0];
+
+  span.onclick = function() {
+    modal.style.display = "none"
+  };
+
+  var images = document.getElementsByTagName('img');
+  var modalImg = document.getElementById('img01');
+  var captionText = document.getElementById('caption');
+  var i;
+  for (i = 0; i < images.length; i++) {
+    images[i].onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+      captionText.innerHTML = this.nextElementSibling.innerHTML;
+    }
+  }
+</script>
+
+</body>
+</html>
