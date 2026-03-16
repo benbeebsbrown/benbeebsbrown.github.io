@@ -110,6 +110,12 @@ font-size: 18px;
 font-weight: normal;
 }
 
+.headshot {
+width: 150px;
+filter: grayscale(100%)
+}
+
+
 footer {
 margin-top: 80px;
 font-size: 14px;
