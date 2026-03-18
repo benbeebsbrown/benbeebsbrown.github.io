@@ -91,7 +91,7 @@ display: block;
 div.img img {
   cursor: pointer;
   width: auto;
-  height: 450px
+  height: 450px;
 }
 
 /* Description of Image */
