@@ -90,7 +90,8 @@ display: block;
 /* The Image */
 div.img img {
   cursor: pointer;
-  width: 300px;
+  width: auto;
+  height: 450px
 }
 
 /* Description of Image */
