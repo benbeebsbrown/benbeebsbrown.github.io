@@ -78,7 +78,6 @@ color: #777;
 .responsive {
 height: 450px;
 display: block;
-
 }
 
 
@@ -90,7 +89,7 @@ div.img img {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .gallery {
     display: block;
     gap: 40px;
@@ -104,12 +103,21 @@ div.img img {
 
   .gallery .responsive {
     width: 100%;
+    height: auto;
     margin-bottom: 20px;
   }
 
   .gallery img {
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
+  }
+
+  div.img img {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
   }
 
   .overlay {
