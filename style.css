@@ -89,7 +89,7 @@ div.img img {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .gallery {
     display: block;
     gap: 40px;
