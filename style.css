@@ -60,6 +60,22 @@ color: rgb(33, 33, 33);
   transition: opacity 0.3s;
 }
 
+@media (max-width: 768px) {
+  .gallery {
+    display: block;
+  }
+
+  .gallery .responsive {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 a:hover .overlay {
   opacity: 1
 }
@@ -81,17 +97,12 @@ display: block;
 
 }
 
-@media (max-width: 500px) {
-  .gallery a {
-    height: 200px;
-  }
-}
 
 /* The Image */
 div.img img {
   cursor: pointer;
   width: auto;
-  height: 450px;
+  height: 450px
 }
 
 /* Description of Image */
