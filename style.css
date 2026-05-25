@@ -93,6 +93,7 @@ div.img img {
 @media (max-width: 768px) {
   .gallery {
     display: block;
+    gap: 40px;
   }
 
   .gallery a {
@@ -109,6 +110,12 @@ div.img img {
   .gallery img {
     width: 100%;
     height: auto;
+  }
+
+  .overlay {
+    text-align: center;
+    opacity: 1;
+    margin-bottom: 20px;
   }
 }
 
