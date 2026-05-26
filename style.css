@@ -154,8 +154,8 @@ div.desc {
   margin: auto;
   width: auto;
   height: auto;
-  max-width: 90vw;
-  max-height: 80vh;
+  max-width: 90%;
+  max-height: 90%;
   display: block;
 }
 
