@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ars Goetia and False Monarchy | Ben Brown | Art and Illustration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a href="index.html">← Back</a>
+
+<h1>Ars Goetia and False Monarchy</h1>
+
+<p>Illustrations for (some of) the seventy-two demons of the <em>Ars Goetia</em>.</p>
+
+<p>Also, some illustrations created for <em>False Monarchy</em>, a zine-sized grimoire / RPG supplement of my own concerning various demons and how to identify their worship.</p>
+
+<h2>Ars Goetia</h2>
+<div class="gallery">
+
+    <div class="responsive">
+    <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1795450465/2026-11-23_-_Bael2_xrq2nd.jpg" loading="lazy">
+      <div class="desc">Bael, the first spirit</div>
+    </div>
+  </div>
+  
+    <div class="responsive">
+    <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1795450472/2026-11-23_-_Beleth_wafkjv.jpg" loading="lazy">
+      <div class="desc">Beleth, the thirteenth spirit</div>
+    </div>
+  </div>
+
+    <div class="responsive">
+    <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1795450463/2026-11-23_-_Vin%C3%A9_dsm9nt.jpg" loading="lazy">
+      <div class="desc">Viné, the forty-fifth spirit</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1795450464/2026-11-23_-_Zagan_gdfxsr.jpg" loading="lazy">
+      <div class="desc">Zagan, the sixty-first spirit</div>
+    </div>
+  </div>
+
+    <div class="responsive">
+    <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1795450467/2026-11-23_-_Belial_rene3o.jpg" loading="lazy">
+      <div class="desc">Belial, the sixty-eighth spirit</div>
+    </div>
+  </div>
+
+</div>
+
+<h2>False Monarchy</h2>
+<div class="gallery">
+
+  <div class="responsive">
+    <div class="img" alt="Cover">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773787504/Cage_man_ps_edit_wym2mh.jpg" loading="lazy">
+      <div class="desc">Lord Argor</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="img">
+       <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773787302/No-face_goat_lady_ps_edit_tco0eu.jpg" loading="lazy">
+      <div class="desc">Lady Arannia</div>
+      </div>
+    </div>
+
+  <div class="responsive"><div class="img">
+     <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773787368/The_Masked_General_ps_edit_ijubd3.jpg" loading="lazy">
+      <div class="desc">Marshal Gorvon</div>
+      </div>
+  </div>
+
+  <div class="responsive">
+    <div class="img">
+       <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773787224/Lady_Mafys_ps_edit_pao2yv.jpg" loading="lazy">
+      <div class="desc">Lady Mafys</div>
+    </div>
+  </div>
+
+   <div class="responsive"><div class="img">
+     <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773787194/No_hands_guy_ps_edit_ghayzi.jpg" loading="lazy">
+    <div class="desc">Lord Sidaeon</div>
+  </div>
+  </div>
+
+  <div class="responsive">
+    <div class="img">
+       <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773787027/Lord_Gragor_ps_edit_1_adnksw.jpg" loading="lazy">
+      <div class="desc">Lord Gragor</div>
+    </div>
+  </div>
+  
+</div>
+
+
+<div id="myModal" class="modal">
+  <span class="close">x</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+  var modal = document.getElementById('myModal');
+
+  var span = document.getElementsByClassName('close')[0];
+
+  span.onclick = function() {
+    modal.style.display = "none"
+  };
+
+  var images = document.getElementsByTagName('img');
+  var modalImg = document.getElementById('img01');
+  var captionText = document.getElementById('caption');
+  var i;
+  for (i = 0; i < images.length; i++) {
+    images[i].onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+      captionText.innerHTML = this.nextElementSibling.innerHTML;
+    }
+  }
+</script>
+
+</body>
+</html>

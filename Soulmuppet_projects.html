@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Left Buried and Soulmuppet projects | Ben Brown | Art and Illustration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a href="index.html">← Back</a>
+
+<h1>Best Left Buried | Soulmuppet Projects</h1>
+
+<p>Illustrations for <em>Best Left Buried</em>, the OSR fantasy-horror game from Soulmuppet publishing.
+</p>
+<p>Plus illustrations for other Soulmuppet projects, including the grimdark urban world of <em>Gangs of Titan City</em>.</p>
+
+<div class="gallery">
+
+  <div class="responsive">
+    <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773793451/img_37_vva2ug.jpg">
+      <div class="desc"><em>Best Left Buried - Cryptdigger's Guide to Survival</em> - cover
+      </div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773792726/img_7_ycwoy8.jpg">
+      <div class="desc">Lion hydra</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773792729/img_10_b7jsox.jpg">
+      <div class="desc"><em>Best Left Buried - Monster Manual</em> - cover</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773793423/img_38_rvssfb.jpg">
+      <div class="desc"><em>Best Left Buried - Cult worshippers</em></div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773793379/img_31_ppzwgx.jpg">
+      <div class="desc"><em>Best Left Buried</em> - Baal</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773793367/img_26_mofiwb.jpg">
+      <div class="desc"><em>Best Left Buried</em> - Great Crow</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+      <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773792424/img_5_ztxxiz.jpg">
+      <div class="desc"><em>Gangs of Titan City</em> - Cover</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+      <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773792283/img_2_penhdo.jpg">
+      <div class="desc"><em>Gangs of Titan City</em> - Vehicles</div>
+  </div>
+</div>
+
+<div class="responsive">
+      <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773792281/img_3_eubgwk.jpg">
+      <div class="desc"><em>Gangs of Titan City</em> - Mastermind class</div>
+  </div>
+</div>
+
+<div class="responsive">
+      <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773792429/img_4_sjosxb.jpg">
+      <div class="desc"><em>Gangs of Titan City</em> - Heist</div>
+  </div>
+</div>
+
+<div class="responsive">
+      <div class="img">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1773792553/img_6_2_m6ozud.jpg">
+      <div class="desc"><em>Gangs of Titan City</em> - Weapons and Equipment</div>
+  </div>
+</div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close">x</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+  var modal = document.getElementById('myModal');
+
+  var span = document.getElementsByClassName('close')[0];
+
+  span.onclick = function() {
+    modal.style.display = "none"
+  };
+
+  var images = document.getElementsByTagName('img');
+  var modalImg = document.getElementById('img01');
+  var captionText = document.getElementById('caption');
+  var i;
+  for (i = 0; i < images.length; i++) {
+    images[i].onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+      captionText.innerHTML = this.nextElementSibling.innerHTML;
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital projects | Ben Brown | Art and Illustration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a href="index.html">← Back</a>
+
+<h1>Digital projects</h1>
+
+<p>Miscellaneous digital art.
+</p>
+
+<div class="gallery">
+
+  <div class="responsive">
+    <div class="img" alt="Black Sun faction logo">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1781219741/gamma_emergent_faction_black_sun_iath1t.jpg" loading="lazy">
+      <div class="desc"><em>Gamma Emergent</em> - Black Sun faction logo</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="img" alt="Orchid Society faction logo">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1781219744/gamma_emergent_faction_orchid_society_oxsjzr.jpg">
+      <div class="desc"><em>Gamma Emergent</em> - Orchid Society faction logo</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="img" alt="Tupilaq">
+      <img src="https://res.cloudinary.com/dm0iltkl7/image/upload/f_auto,q_auto,w_1200,c_limit/v1781219934/2025-10-25_-_Tupilaq_PS_oldxg0.jpg">
+      <div class="desc">Tupilaq</div>
+    </div>
+  </div>
+  
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close">x</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+  var modal = document.getElementById('myModal');
+
+  var span = document.getElementsByClassName('close')[0];
+
+  span.onclick = function() {
+    modal.style.display = "none"
+  };
+
+  var images = document.getElementsByTagName('img');
+  var modalImg = document.getElementById('img01');
+  var captionText = document.getElementById('caption');
+  var i;
+  for (i = 0; i < images.length; i++) {
+    images[i].onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+      captionText.innerHTML = this.nextElementSibling.innerHTML;
+    }
+  }
+</script>
+
+</body>
+</html>
