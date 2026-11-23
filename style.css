@@ -153,7 +153,7 @@ div.desc {
 .modal-content {
   margin: auto;
   max-width: 90vw;
-  max-height: 90vh;
+  max-height: 80vh;
   width: auto;
   height: auto;
   display: block;
